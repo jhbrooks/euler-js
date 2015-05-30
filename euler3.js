@@ -6,11 +6,10 @@ var factor = function(num,div) {
 	if (num === div) {
 		return div;
 	} else if (num % div === 0) {
-		console.log(div);
 		return factor((num / div),2);
 	} else {
 		return factor(num,(div + 1));
 	};
 };
 
-console.log(factor(117,2));
+console.log(factor(600851475143,2));
