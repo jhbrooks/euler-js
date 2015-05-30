@@ -10,7 +10,11 @@ var even_sum = 0;
 
 while ((n1 < 100) && (n2 < 100)) {
 	holder = n2;
+	if (holder % 2 === 0) {
+		even_sum += holder;
+	};
 	n2 = n1 + n2;
 	n1 = holder;
 	console.log(holder);
-}
+	console.log(even_sum);
+};
