@@ -7,9 +7,9 @@ var factor = function(num,div) {
 		return div;
 	} else if (num % div === 0) {
 		console.log(div);
-		return function((num/div),2);
+		return factor((num / div),2);
 	} else {
-		return function(num,(div+1));
+		return factor(num,(div + 1));
 	};
 };
 
